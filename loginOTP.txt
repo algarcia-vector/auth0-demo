@@ -1,0 +1,8 @@
+        auth0.auth
+          .loginWithOTP({
+            mfaToken: error.json.mfa_token,
+            otp: '425312',
+          })
+          .then(console.log)
+          .catch(console.error);
+      
